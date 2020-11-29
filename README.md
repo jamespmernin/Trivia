@@ -147,7 +147,15 @@ src
 
 ### Server (Back End)
 
+<br>
+
 #### ERD Model
+
+<br>
+
+#### API Documentation
+
+[Open Trivia Database API](https://opentdb.com/api_config.php)
 
 <br>
 
