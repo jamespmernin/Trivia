@@ -20,26 +20,23 @@
 
 ## Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_**Trivia** is a project that grabs ten trivia questions from the open trivia database and keeps track of scores in a leaderboard. You have to log in to play the game, and those logins will be stored in a table that is linked to high scores._
 
 
 <br>
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_The **Trivia** MVP will contain three tables: users, trivia questions, and high scores. The application will use a front-end to shape the GUI and a back-end to store the data._
 
 <br>
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- _A landing page that requires users to sign up before playing a game of trivia._
+- _After logging in, a home page that lets you start a round of trivia._
+- _The trivia game consists of twenty questions that get cycled through, while a running score keeps track of questions answered correctly._
+- _A separate leaderboard component that shows high scores earned._
 
 <br>
 
@@ -49,8 +46,9 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
+|       API        | _https://opentdb.com/api_config.php_ |
+|      React       | _Will be used to develop the GUI on the front end._ |
+|   React Router   | _Will contain trivia game components like multiple choice answers and questions._ |
 | React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
 |     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
 |  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
@@ -87,10 +85,6 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 - Mobile Resource Index
 
-#### Component Tree
-
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. 
-
 #### Component Hierarchy
 
 > Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
@@ -105,6 +99,12 @@ src
       |__ mockups
 |__ components/
       |__ Header.jsx
+      |__ Body.jsx
+      |__ Leaderboard.jsx
+      |__ Question.jsx
+      |__ Final_Score.jsx
+      |__ User_Create.jsx
+      |__ User_Delete.jsx
 |__ services/
 
 ```
@@ -119,13 +119,20 @@ src
 
 > Use this section to estimate the time necessary to build out each of the components you've described above.
 
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+| Task                | Priority | Estimated Time | Actual Time |
+| ------------------- | :------: | :------------: | :-----------: |
+| Create User Database    |    H     |     3 hrs      |     TBD     |
+| Create Sign Up/Log In Pages |    H     |     4 hrs      |     TBD     |
+| Create Landing Page |    H     |     4 hrs      |     TBD     |
+| Create Leaderboard Table |    H     |     5 hrs      |     TBD     |
+| Implement Top Five Leaderboard Scores on Home Page |    M     |     4 hrs      |     TBD     |
+| Call Upon the Trivia API to post a random question |    H     |     5 hrs      |     TBD     |
+| Make a game that uses twenty questions |    H     |     6 hrs      |     TBD     |
+| Implement scoring system |    M     |     3 hrs      |    TBD    |
+| Allow CRUD for leaderboards and user accounts |    H     |     5 hrs      |    TBD    |
+| Post-MVP: Customize difficulty |    L     |     4 hrs      |    TBD    |
+| Post-MVP: Make score proportional to question difficulty |    L     |     4 hrs      |    TBD    |
+| TOTAL               |    H     |     50 hrs      |     TBD     |
 
 <br>
 
@@ -141,14 +148,16 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+- _Customize difficulty by allowing the user to pick more difficult questions for a higher score potential._
+- _Base the score on how difficult the questions are, the harder the question the higher the points that can be scored._
+- _Allow users to select the category of trivia they desire._
 
 ***
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+To be included at a later point.
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
+To be included at a later point.
