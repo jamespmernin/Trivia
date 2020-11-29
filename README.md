@@ -152,6 +152,8 @@ src
 
 #### ERD Model
 
+![ERD Model](./assets/trivia-erd.jpg)
+
 <br>
 
 #### API Documentation
