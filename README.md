@@ -111,14 +111,48 @@ src
       |__ images
       |__ mockups
 |__ components/
-      |__ Header.jsx
-      |__ Body.jsx
-      |__ Leaderboard.jsx
-      |__ Question.jsx
-      |__ Final_Score.jsx
-      |__ User_Create.jsx
-      |__ User_Delete.jsx
+      |__ Question
+            |__ Question.css
+            |__ Question.js
+      |__ QuestionDisplay
+            |__ QuestionDisplay.css
+            |__ QuestionDisplay.js
+      |__ Answer
+            |__ Answer.css
+            |__ Answer.js
+      |__ FinalScore
+            |__ FinalScore.css
+            |__ FinalScore.js
+      |__ shared/
+            |__ Header/
+                  |__ Header.css
+                  |__ Header.js
+            |__ Layout/
+                  |__ Layout.css
+                  |__ Layout.js
+            |__ Footer/
+                  |__ Footer.css
+                  |__ Footer.js
+|__ screens
+      |__ Landing
+            |__ Landing.css
+            |__ Landing.js
+      |__ Home
+            |__ Home.css
+            |__ Home.js
+      |__ Leaderboard
+            |__ Leaderboard.css
+            |__ Leaderboard.js
+      |__ UserAccount
+            |__ User Account.css
+            |__ User Account.js
 |__ services/
+      |__ apiConfig.js
+      |__ questions.js
+      |__ App.css
+      |__ App.js
+      |__ index.css
+      |__ index.js
 
 ```
 
