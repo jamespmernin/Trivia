@@ -132,7 +132,8 @@ src
 | Allow CRUD for leaderboards and user accounts |    H     |     5 hrs      |    TBD    |
 | Post-MVP: Customize difficulty |    L     |     4 hrs      |    TBD    |
 | Post-MVP: Make score proportional to question difficulty |    L     |     4 hrs      |    TBD    |
-| TOTAL               |    H     |     50 hrs      |     TBD     |
+| Post-MVP: Allow users to select category of questions |    L     |     5 hrs      |    TBD    |
+| TOTAL               |    H     |     55 hrs      |     TBD     |
 
 <br>
 
