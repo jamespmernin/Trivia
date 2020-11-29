@@ -27,7 +27,7 @@ _**Trivia** is a project that grabs ten trivia questions from the open trivia da
 
 ## MVP
 
-_The **Trivia** MVP will contain three tables: users, trivia questions, and high scores. The application will use a front-end to shape the GUI and a back-end to store the data._
+_The **Trivia** MVP will contain three tables: users, trivia questions, and high scores. The application will use a front-end to shape the GUI and a back-end to store the data. Trivia games will be twenty questions, each worth 200 points, for a maximum score of 4,000 points. A leaderboard will be implemented to save high scores and the users that achieved them. Users will be able to remove their scores from the leaderboards and also remove their account._
 
 <br>
 
@@ -37,6 +37,7 @@ _The **Trivia** MVP will contain three tables: users, trivia questions, and high
 - _After logging in, a home page that lets you start a round of trivia._
 - _The trivia game consists of twenty questions that get cycled through, while a running score keeps track of questions answered correctly._
 - _A separate leaderboard component that shows high scores earned._
+- _Full CRUD funcionality for leaderboard scores and user accounts._
 
 <br>
 
@@ -49,9 +50,8 @@ _The **Trivia** MVP will contain three tables: users, trivia questions, and high
 |       API        | _https://opentdb.com/api_config.php_ |
 |      React       | _Will be used to develop the GUI on the front end._ |
 |   React Router   | _Will contain trivia game components like multiple choice answers and questions._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|     Express      | _Tables will be created for users, questions, and the leaderboard._ |
+|  Express Router  | _Each table component above will be called upon on their appropriate pages._ |
 
 <br>
 
