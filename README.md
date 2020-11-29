@@ -78,7 +78,7 @@ _The **Trivia** MVP will contain three tables: users, trivia questions, and high
 
 - Mobile Wireframe
 
-[Mobile](https://wireframe.cc/pro/pp/e630dd380399006)
+[Mobile Wireframe](https://wireframe.cc/pro/pp/e630dd380399006)
 
 [Tablet](url)
 
