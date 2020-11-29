@@ -1,8 +1,10 @@
 # PROJECT 4 README <!-- omit in toc -->
 
 - [Overview](#overview)
+- [Features](#features)
 - [MVP](#mvp)
   - [Goals](#goals)
+  - [Challenges](#challenges)
   - [Libraries and Dependencies](#libraries-and-dependencies)
   - [Client (Front End)](#client-front-end)
     - [Wireframes](#wireframes)
@@ -12,6 +14,7 @@
     - [Time Estimates](#time-estimates)
   - [Server (Back End)](#server-back-end)
     - [ERD Model](#erd-model)
+    - [API Documentation](#api-documentation)
 - [Post-MVP](#post-mvp)
 - [Code Showcase](#code-showcase)
 - [Code Issues & Resolutions](#code-issues--resolutions)
@@ -22,12 +25,20 @@
 
 _**Trivia** is a project that grabs ten trivia questions from the open trivia database and keeps track of scores in a leaderboard. You have to log in to play the game, and those logins will be stored in a table that is linked to high scores._
 
+<br>
+
+## Features
+
+- _A trivia app capable of getting random questions from the Open Trivia Database API._
+- _An ability to save high scores to a leaderboard._
+- _Full CRUD capability for user accounts and individual leaderboard scores._
+- _Top five scores are shown on the home page with user, score, and date posted._
 
 <br>
 
 ## MVP
 
-_The **Trivia** MVP will contain three tables: users, trivia questions, and high scores. The application will use a front-end to shape the GUI and a back-end to store the data. Trivia games will be twenty questions, each worth 200 points, for a maximum score of 4,000 points. A leaderboard will be implemented to save high scores and the users that achieved them. Users will be able to remove their scores from the leaderboards and also remove their account._
+_The **Trivia** MVP will contain three tables: users, trivia questions, and high scores. The application will use a front-end to shape the GUI and a back-end to store the data. Trivia games will be twenty questions, each worth 200 points, for a maximum score of 4,000 points. A leaderboard will be implemented to save high scores, the users that achieved them, and the date and time that the scores were posted. Users will be able to remove their scores from the leaderboards and also remove their account._
 
 <br>
 
@@ -41,9 +52,15 @@ _The **Trivia** MVP will contain three tables: users, trivia questions, and high
 
 <br>
 
-### Libraries and Dependencies
+### Challenges
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
+- _The biggest challenge will be to unite the front and the back end. I am capable on working on each individually, but combining them may prove challengings._
+- _Making sure that the leaderboard is constantly updated and that users can only delete their own scores without interfering with anyone else's._
+- _I'm a little rusty about including API's in the project, so a refresher will be needed to make sure that works properly._
+
+<br>
+
+### Libraries and Dependencies
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
@@ -58,8 +75,6 @@ _The **Trivia** MVP will contain three tables: users, trivia questions, and high
 ### Client (Front End)
 
 #### Wireframes
-
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
 ![Dummy Link](url)
 
@@ -87,8 +102,6 @@ _The **Trivia** MVP will contain three tables: users, trivia questions, and high
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
-
 ``` structure
 
 src
@@ -111,13 +124,9 @@ src
 
 #### Component Tree
 
-
-
-![Component tree](blob:https://whimsical.com/5788c001-7eda-44a8-aef2-0792578feca6)
+![Component tree](./assets/component-tree.png)
 
 #### Time Estimates
-
-> Use this section to estimate the time necessary to build out each of the components you've described above.
 
 | Task                | Priority | Estimated Time | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: |
@@ -139,9 +148,15 @@ src
 
 ### Server (Back End)
 
+<br>
+
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+<br>
+
+#### API Documentation
+
+[Open Trivia Database API](https://opentdb.com/api_config.php)
 
 <br>
 
