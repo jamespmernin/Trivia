@@ -111,9 +111,7 @@ src
 
 #### Component Tree
 
-> Use this section to include a link to your component tree.
-
-[Component tree](url)
+[Component tree](https://whimsical.com/5788c001-7eda-44a8-aef2-0792578feca6)
 
 #### Time Estimates
 
