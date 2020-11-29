@@ -61,8 +61,6 @@ _The **Trivia** MVP will contain three tables: users, trivia questions, and high
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
-
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |       API        | _https://opentdb.com/api_config.php_ |
@@ -76,8 +74,6 @@ _The **Trivia** MVP will contain three tables: users, trivia questions, and high
 ### Client (Front End)
 
 #### Wireframes
-
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
 ![Dummy Link](url)
 
@@ -105,8 +101,6 @@ _The **Trivia** MVP will contain three tables: users, trivia questions, and high
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
-
 ``` structure
 
 src
@@ -133,8 +127,6 @@ src
 
 #### Time Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
-
 | Task                | Priority | Estimated Time | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: |
 | Create User Database    |    H     |     3 hrs      |     TBD     |
@@ -156,8 +148,6 @@ src
 ### Server (Back End)
 
 #### ERD Model
-
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
 
 <br>
 
