@@ -76,17 +76,11 @@ _The **Trivia** MVP will contain three tables: users, trivia questions, and high
 
 #### Wireframes
 
-- Mobile Wireframe
-
 [Mobile Wireframe](https://wireframe.cc/pro/pp/e630dd380399006)
 
 [Tablet](url)
 
-- Tablet Wireframe
-
 [Dummy](url)
-
-- Desktop Wireframe
 
 #### Component Hierarchy
 
