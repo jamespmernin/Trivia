@@ -126,6 +126,14 @@ src
 
 ![Component tree](./assets/component-tree.png)
 
+**Breakdown**
+
+- The app starts on the landing page, where a user can either sign up or log in with an existing account.
+- The next destination is the home page, where the current leaderboard can be viewed or a user can start a new game.
+- The game component will post random questions from the API with multiple choices for the answer.
+- The final score page is reached after twenty questions have been answered, showing the number of correct answers and the total score.
+- From that score page, the user can submit their score to the leaderboard and return to the home page.
+
 #### Time Estimates
 
 | Task                | Priority | Estimated Time | Actual Time |
