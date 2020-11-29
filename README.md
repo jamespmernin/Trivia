@@ -113,7 +113,7 @@ src
 
 
 
-![Component tree](https://whimsical.com/5788c001-7eda-44a8-aef2-0792578feca6)
+![Component tree](blob:https://whimsical.com/5788c001-7eda-44a8-aef2-0792578feca6)
 
 #### Time Estimates
 
