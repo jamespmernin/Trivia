@@ -76,11 +76,9 @@ _The **Trivia** MVP will contain three tables: users, trivia questions, and high
 
 #### Wireframes
 
-[Mobile](https://wireframe.cc/pro/pp/e630dd380399006)
+[All Wireframes](https://wireframe.cc/pro/pp/e630dd380399006)
 
-[Tablet](url)
-
-[Dummy](url)
+<br>
 
 #### Component Hierarchy
 
@@ -138,6 +136,8 @@ src
 
 ```
 
+<br>
+
 #### Component Tree
 
 ![Component tree](./assets/component-tree.png)
@@ -149,6 +149,8 @@ src
 - The game component will post random questions from the API with multiple choices for the answer.
 - The final score page is reached after twenty questions have been answered, showing the number of correct answers and the total score.
 - From that score page, the user can submit their score to the leaderboard and return to the home page.
+
+<br>
 
 #### Time Estimates
 
@@ -172,8 +174,6 @@ src
 
 ### Server (Back End)
 
-<br>
-
 #### ERD Model
 
 ![ERD Model](./assets/trivia-erd.jpg)
@@ -196,9 +196,13 @@ src
 
 ***
 
+<br>
+
 ## Code Showcase
 
 To be included at a later point.
+
+<br>
 
 ## Code Issues & Resolutions
 
