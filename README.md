@@ -23,7 +23,7 @@
 
 ## Overview
 
-_**Trivia** is a project that grabs ten trivia questions from the open trivia database and keeps track of scores in a leaderboard. You have to log in to play the game, and those logins will be stored in a table that is linked to high scores._
+_**Trivia** is a project that grabs twenty trivia questions from the open trivia database and keeps track of scores in a leaderboard. You have to log in to play the game, and those logins will be stored in a table that is linked to high scores._
 
 <br>
 
