@@ -179,7 +179,7 @@ src
 
 #### ERD Model
 
-![ERD Model](./assets/trivia-erd.jpg)
+![ERD Model](./assets/trivia-erd.png)
 
 <br>
 
