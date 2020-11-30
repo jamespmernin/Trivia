@@ -54,7 +54,7 @@ _The **Trivia** MVP will contain three tables: users, trivia questions, and high
 
 ### Challenges
 
-- _The biggest challenge will be to unite the front and the back end. I am capable on working on each individually, but combining them may prove challengings._
+- _The biggest challenge will be to unite the front and the back end. I am capable on working on each individually, but combining them may prove challenging._
 - _Making sure that the leaderboard is constantly updated and that users can only delete their own scores without interfering with anyone else's._
 - _I'm a little rusty about including API's in the project, so a refresher will be needed to make sure that works properly._
 
