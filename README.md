@@ -1,4 +1,4 @@
-# PROJECT 4 README <!-- omit in toc -->
+# TRIVIA (GA Project 4) README <!-- omit in toc -->
 
 - [Overview](#overview)
 - [Features](#features)
