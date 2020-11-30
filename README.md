@@ -14,7 +14,6 @@
     - [Time Estimates](#time-estimates)
   - [Server (Back End)](#server-back-end)
     - [ERD Model](#erd-model)
-    - [API Documentation](#api-documentation)
 - [Post-MVP](#post-mvp)
 - [Code Showcase](#code-showcase)
 - [Code Issues & Resolutions](#code-issues--resolutions)
@@ -180,12 +179,6 @@ src
 #### ERD Model
 
 ![ERD Model](./assets/trivia-erd.png)
-
-<br>
-
-#### API Documentation
-
-[Open Trivia Database API](https://opentdb.com/api_config.php)
 
 <br>
 
