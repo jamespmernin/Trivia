@@ -76,7 +76,7 @@ _The **Trivia** MVP will contain three tables: users, trivia questions, and high
 
 #### Wireframes
 
-[All Wireframes](https://wireframe.cc/pro/pp/e630dd380399006)
+[All Wireframes](https://whimsical.com/trivia-qxE6HCNk8nQ3XYJSB6YwB)
 
 <br>
 
