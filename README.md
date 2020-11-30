@@ -23,32 +23,32 @@
 
 ## Overview
 
-_**Trivia** is a project that grabs twenty trivia questions from the open trivia database and keeps track of scores in a leaderboard. You have to log in to play the game, and those logins will be stored in a table that is linked to high scores._
+_**Trivia** is a project that allows users to both MAKE and TAKE quizzes, while keeping track of scores in a leaderboard. You have to log in to make or take quizzes, and those logins will be stored in a table that is linked to quizzes created and leaderboard scores._
 
 <br>
 
 ## Features
 
-- _A trivia app capable of getting random questions from the Open Trivia Database API._
+- _A trivia app capable of allowing users to make quizzes and to take quizzes already made._
 - _An ability to save high scores to a leaderboard._
-- _Full CRUD capability for user accounts and individual leaderboard scores._
+- _Full CRUD capability for user accounts, individual leaderboard scores, and user-generated quizzes._
 - _Top five scores are shown on the home page with user, score, and date posted._
 
 <br>
 
 ## MVP
 
-_The **Trivia** MVP will contain three tables: users, trivia questions, and high scores. The application will use a front-end to shape the GUI and a back-end to store the data. Trivia games will be twenty questions, each worth 200 points, for a maximum score of 4,000 points. A leaderboard will be implemented to save high scores, the users that achieved them, and the date and time that the scores were posted. Users will be able to remove their scores from the leaderboards and also remove their account._
+_The **Trivia** MVP will contain three tables: users, quizzes, and leaderboard. The application will use a front-end to shape the GUI and a back-end to store the data. Trivia games will be ten questions, each worth 200 points, for a maximum score of 4,000 points. A leaderboard will be implemented to save high scores, the users that achieved them, and the date and time that the scores were posted. Users will be able to remove their scores from the leaderboards and also remove their account._
 
 <br>
 
 ### Goals
 
 - _A landing page that requires users to sign up before playing a game of trivia._
-- _After logging in, a home page that lets you start a round of trivia._
-- _The trivia game consists of twenty questions that get cycled through, while a running score keeps track of questions answered correctly._
-- _A separate leaderboard component that shows high scores earned._
-- _Full CRUD funcionality for leaderboard scores and user accounts._
+- _After logging in, a home page that lets you take a quiz or make your own._
+- _Each quiz consists of ten questions that get cycled through, while a running score keeps track of questions answered correctly and points earned._
+- _A separate leaderboard component that shows all high scores earned._
+- _Full CRUD funcionality for leaderboard scores, user quizzes, and user accounts._
 
 <br>
 
@@ -64,7 +64,6 @@ _The **Trivia** MVP will contain three tables: users, trivia questions, and high
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|       API        | _https://opentdb.com/api_config.php_ |
 |      React       | _Will be used to develop the GUI on the front end._ |
 |   React Router   | _Will contain trivia game components like multiple choice answers and questions._ |
 |     Express      | _Tables will be created for users, questions, and the leaderboard._ |
@@ -97,6 +96,9 @@ src
       |__ QuestionDisplay
             |__ QuestionDisplay.css
             |__ QuestionDisplay.js
+      |__QuestionCreate
+            |__QuestionCreate.css
+            |__QuestionCreate.js
       |__ Answer
             |__ Answer.css
             |__ Answer.js
@@ -124,8 +126,11 @@ src
             |__ Leaderboard.css
             |__ Leaderboard.js
       |__ UserAccount
-            |__ User Account.css
-            |__ User Account.js
+            |__ UserAccount.css
+            |__ UserAccount.js
+      |__ UserQuizzes
+            |__ UserQuizzes.css
+            |__UserQuizzes.js
 |__ services/
       |__ apiConfig.js
       |__ questions.js
@@ -161,14 +166,12 @@ src
 | Create Landing Page |    H     |     4 hrs      |     TBD     |
 | Create Leaderboard Table |    H     |     5 hrs      |     TBD     |
 | Implement Top Five Leaderboard Scores on Home Page |    M     |     4 hrs      |     TBD     |
-| Call Upon the Trivia API to post a random question |    H     |     5 hrs      |     TBD     |
-| Make a game that uses twenty questions |    H     |     6 hrs      |     TBD     |
+| Create a way for users to make their own quizzes |    H     |     8 hrs      |     TBD     |
+| Make a game that uses ten questions |    H     |     6 hrs      |     TBD     |
 | Implement scoring system |    M     |     3 hrs      |    TBD    |
-| Allow CRUD for leaderboards and user accounts |    H     |     5 hrs      |    TBD    |
-| Post-MVP: Customize difficulty |    L     |     4 hrs      |    TBD    |
-| Post-MVP: Make score proportional to question difficulty |    L     |     4 hrs      |    TBD    |
+| Allow CRUD for leaderboards, user quizzes, and user accounts |    H     |     8 hrs      |    TBD    |
 | Post-MVP: Allow users to select category of questions |    L     |     5 hrs      |    TBD    |
-| TOTAL               |    H     |     55 hrs      |     TBD     |
+| TOTAL               |    H     |     50 hrs      |     TBD     |
 
 <br>
 
