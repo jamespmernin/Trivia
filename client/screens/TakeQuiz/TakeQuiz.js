@@ -6,7 +6,7 @@ import './TakeQuiz.css';
 const TakeQuiz = () => {
   return (
     <Layout>
-
+      {/*  Need links to all quizzes in the database to allow user to choose one */}
     </Layout>
   );
 }

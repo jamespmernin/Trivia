@@ -6,7 +6,7 @@ import './Landing.css';
 const Landing = () => {
   return (
     <Layout>
-
+      {/* Needs two links, one to sign up, one to log in */}
     </Layout>
   );
 }

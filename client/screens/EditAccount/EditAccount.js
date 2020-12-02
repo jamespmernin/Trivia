@@ -6,7 +6,8 @@ import './EditAccount.css';
 const EditAccount = () => {
   return (
     <Layout>
-
+      <h1>Edit Account</h1>
+      {/* Put user account preferences here to change username, change password, delete account entirely */}
     </Layout>
   );
 }
