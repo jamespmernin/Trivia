@@ -12,7 +12,7 @@ const Login = () => {
           <NavLink id="arrow-link" to="/">
             <img id="arrow" src="/assets/arrow-go-back.png" alt="backpointing arrow" />
           </NavLink>
-          <h1 id="login-header">Welcome!</h1>
+          <h1 id="login-header">Log In!</h1>
         </div>
         <div id="credentials-box">
           <div id="login-username-box">
@@ -25,30 +25,12 @@ const Login = () => {
               autoFocus
             />
           </div>
-          <div id="login-username-confirm-box">
-            <label htmlFor="username-confirm">Confirm Username:</label>
-            <input
-              type="username-confirm"
-              id="login-username-confirm"
-              placeholder="Confirm Username"
-              required
-            />
-          </div>
           <div id="login-password-box">
             <label htmlFor="password">Password:</label>
             <input
               id="password"
               type="password"
               placeholder="Password"
-              required
-            />
-          </div>
-          <div id="login-password-confirm-box">
-            <label htmlFor="password-confirm">Confirm Password:</label>
-            <input
-              id="password-confirm"
-              type="password-confirm"
-              placeholder="Confirm Password"
               required
             />
           </div>
