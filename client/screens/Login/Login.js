@@ -4,7 +4,7 @@ import Layout from '../../components/shared/Layout/Layout';
 import './Login.css';
 
 const Login = () => {
-
+  /* User name and password both need to be validated to match the user database */
   return (
     <Layout>
       <div id="login-main-container">

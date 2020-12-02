@@ -4,7 +4,7 @@ import Layout from '../../components/shared/Layout/Layout';
 import './Signup.css';
 
 const Signup = () => {
-
+  /* User name and password both need to be confirmed to match before adding a user account */
   return (
     <Layout>
       <div id="signup-main-container">
