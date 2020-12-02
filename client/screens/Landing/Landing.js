@@ -1,12 +1,13 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+import { NavLink as Link } from "react-router-dom";
 import Layout from '../../components/shared/Layout/Layout';
 import './Landing.css';
 
 const Landing = () => {
   return (
     <Layout>
-      {/* Needs two links, one to sign up, one to log in */}
+      <Link to="/signup">Sign Up</Link>
+      <Link to="/login">Log In</Link>
     </Layout>
   );
 }

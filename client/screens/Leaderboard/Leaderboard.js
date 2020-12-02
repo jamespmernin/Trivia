@@ -7,6 +7,7 @@ const Leaderboard = () => {
   return (
     <Layout>
       {/* Needs to display all the high scores from the SQL table */}
+      <Link to="/home">Home</Link>
     </Layout>
   );
 }
