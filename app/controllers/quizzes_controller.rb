@@ -20,7 +20,7 @@ class QuizzesController < ApplicationController
     @quiz.user = @current_user
 
     if @quiz.save
-      render json: @quiz, status: :created, location: @quiz
+      render json: @quiz, include: { questions: {include: :answers} }, status: :created
     else
       render json: @quiz.errors, status: :unprocessable_entity
     end
@@ -29,7 +29,7 @@ class QuizzesController < ApplicationController
   # PATCH/PUT /quizzes/1
   def update
     if @quiz.update(quiz_params)
-      render json: @quiz
+      render json: @quiz, include: { questions: {include: :answers} }
     else
       render json: @quiz.errors, status: :unprocessable_entity
     end
