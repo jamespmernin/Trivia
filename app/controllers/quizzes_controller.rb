@@ -1,5 +1,6 @@
 class QuizzesController < ApplicationController
   before_action :set_quiz, only: [:show, :update, :destroy]
+  before_action :authorize_request, except: [:index, :show]
 
   # GET /quizzes
   def index
@@ -10,12 +11,13 @@ class QuizzesController < ApplicationController
 
   # GET /quizzes/1
   def show
-    render json: @quiz
+    render json: @quiz, include: { questions: {include: :answers} }
   end
 
   # POST /quizzes
   def create
     @quiz = Quiz.new(quiz_params)
+    @quiz.user = @current_user
 
     if @quiz.save
       render json: @quiz, status: :created, location: @quiz
