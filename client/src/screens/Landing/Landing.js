@@ -6,8 +6,12 @@ import './Landing.css';
 const Landing = () => {
   return (
     <div>
-      <Link to="/signup">Sign Up</Link>
-      <Link to="/login">Log In</Link>
+      <h1>Welcome to Trivia!</h1>
+      <h2>Get ready to stump your friends...or be stumped!</h2>
+      <div id="register">
+        <Link to="/signup">Sign Up</Link>
+        <Link to="/login">Log In</Link>
+      </div>
     </div>
   );
 }
