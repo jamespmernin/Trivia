@@ -1,11 +1,12 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import Home from '../Home/Home';
 import './Login.css';
 
 const Login = () => {
   /* User name and password both need to be validated to match the user database */
   return (
-    <Layout>
+    <div>
       <div id="login-main-container">
         <div id="login-header-container">
           <NavLink id="arrow-link" to="/">
@@ -35,7 +36,10 @@ const Login = () => {
           </div>
         </div>
       </div>
-    </Layout>
+      <Route path='/home'>
+        <Home />
+      </Route>
+    </div>
   );
 }
 

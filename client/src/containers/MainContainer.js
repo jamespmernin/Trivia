@@ -2,6 +2,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Landing from '../screens/Landing/Landing';
+import Home from '../screens/Home/Home'
 
 const MainContainer = () => {
   // functional logic, state and store state
