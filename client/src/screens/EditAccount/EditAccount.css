@@ -1,1 +1,4 @@
 /* I will want to center all elements on this page and make sure to add styling to the buttons and text fields required */
+h1 {
+  text-align: center;
+}
