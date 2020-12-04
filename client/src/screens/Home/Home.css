@@ -1,1 +1,4 @@
 /* Center all elements, show top five leaderboard scores as long as there are at least five in the database */
+h1 {
+  text-align: center;
+}

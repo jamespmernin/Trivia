@@ -1,1 +1,4 @@
 /* First there is a page with all submitted quizzes in the database, then a user picks one and starts to take it by guessing answers, everything should be centered with four options to pick from */
+h1 {
+  text-align: center;
+}
