@@ -1,12 +1,11 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
-import Layout from '../../components/shared/Layout/Layout';
+import { NavLink, Route } from "react-router-dom";
 import './Signup.css';
 
 const Signup = () => {
   /* User name and password both need to be confirmed to match before adding a user account */
   return (
-    <Layout>
+    <Route exact path="/signup">
       <div id="signup-main-container">
         <div id="signup-header-container">
           <NavLink id="arrow-link" to="/">
@@ -54,7 +53,7 @@ const Signup = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </Route>
   );
 }
 

@@ -1,15 +1,16 @@
 // Quiz logic, state here
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import Landing from '../screens/Landing/Landing';
 
 const MainContainer = () => {
   // functional logic, state and store state
   return (
-    < Switch >
+    <Switch>
       <Route path="/">
-        <h1>Hello World</h1>
+        <Landing />
       </Route>
-    </Switch >
+    </Switch>
   )
 }
 
