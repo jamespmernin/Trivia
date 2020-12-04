@@ -9,9 +9,6 @@ const Login = () => {
     <div>
       <div id="login-main-container">
         <div id="login-header-container">
-          <NavLink id="arrow-link" to="/">
-            <img id="arrow" src="/assets/arrow-go-back.png" alt="backpointing arrow" />
-          </NavLink>
           <h1 id="login-header">Log In!</h1>
         </div>
         <div id="credentials-box">

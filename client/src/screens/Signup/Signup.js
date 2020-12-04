@@ -10,9 +10,6 @@ const Signup = () => {
       <Route exact path="/signup">
         <div id="signup-main-container">
           <div id="signup-header-container">
-            <NavLink id="arrow-link" to="/">
-              <img id="arrow" src="/assets/arrow-go-back.png" alt="backpointing arrow" />
-            </NavLink>
             <h1 id="signup-header">Sign Up!</h1>
           </div>
           <div id="credentials-box">
