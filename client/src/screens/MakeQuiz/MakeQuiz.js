@@ -5,14 +5,14 @@ import './MakeQuiz.css';
 
 const MakeQuiz = () => {
   return (
-    <Layout>
-      {/* There will need to be ten questions added to a quiz (how do I validate that?) so to do that I need to make sure that when a user makes a quiz, they can give it the following:
-A title
-Their username associated with it
-A text block to create a question
-Four possible answers and a way to verify which answer is the correct one
-This quiz should have full CRUD capability */}
-    </Layout>
+    <div>
+      <h1>Make Quiz</h1>
+      <h2>Make a title for your quiz here.</h2>
+      {/* Allow a text form here to fill out a title (required) */}
+      <h2>For each question (ten total), come up with a question, four answers, and choose which answer is correct.</h2>
+      {/* Form for question, forms for answers, radio button for correct answer, do this ten times */}
+      {/* Button to save, button to discard, button to submit */}
+    </div>
   );
 }
 
