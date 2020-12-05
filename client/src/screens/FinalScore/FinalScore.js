@@ -1,14 +1,15 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import Layout from '../../layouts/Layout';
 import './FinalScore.css';
 
 const Leaderboard = () => {
   return (
-    <div>
+    <Layout>
       <h1>Final Score</h1>
       {/* Link to go home and notice of high score achieved if it was achieved */}
       <Link to="/home">Home</Link>
-    </div>
+    </Layout>
   );
 }
 
