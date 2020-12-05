@@ -16,13 +16,13 @@ export default function Header(props) {
           <Link to='/login'>Login</Link>
       }
       <hr />
-      {
+      {/* {
         currentUser &&
         <>
           <Link to='/foods'>foods</Link>
           <Link to='/flavors'>flavors</Link>
         </>
-      }
+      } */}
     </div>
   )
 }
