@@ -27,7 +27,7 @@ function App() {
       }
     }
     handleVerify();
-  })
+  }, [])
 
   const handleLogin = async (loginData) => {
     const userData = await loginUser(loginData);
