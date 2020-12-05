@@ -7,7 +7,8 @@ const Landing = () => {
     <div>
       <h2>Get ready to stump your friends...or be stumped!</h2>
       <div id="register">
-        <Link to="/signup">Sign Up</Link>
+        <Link to="/login"><button>Log In</button></Link>
+        <Link to="/signup"><button>Sign Up</button></Link>
       </div>
     </div>
   );
