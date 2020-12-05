@@ -64,6 +64,26 @@ function App() {
           <Home currentUser={currentUser} />
         </Route>
 
+        <Route path='/makequiz'>
+          <MakeQuiz currentUser={currentUser} />
+        </Route>
+
+        <Route path='/takequiz'>
+          <TakeQuiz currentUser={currentUser} />
+        </Route>
+
+        <Route path='/finalscore'>
+          <FinalScore currentUser={currentUser} />
+        </Route>
+
+        <Route path='/leaderboard'>
+          <Leaderboard currentUser={currentUser} />
+        </Route>
+
+        <Route path='/accountdetails'>
+          <EditAccount currentUser={currentUser} />
+        </Route>
+
         <Route path='/'>
           <Landing />
         </Route>
