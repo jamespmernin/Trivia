@@ -39,7 +39,7 @@ export default function Register(props) {
         />
       </label>
       <br />
-      <Link to='/home'><button>Submit</button></Link>
+      <button>Submit</button>
     </form>
   )
 }

@@ -40,7 +40,8 @@ export default function Login(props) {
         />
       </label>
       <br />
-      <Link to='/home'><button>Submit</button></Link>
+      {/* <Link to='/home'><button>Submit</button></Link> */}
+      <button>Submit</button>
       <Link to='/signup'><button>Sign Up</button></Link>
     </form>
   )
