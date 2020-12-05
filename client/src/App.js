@@ -76,9 +76,9 @@ function App() {
           <FinalScore currentUser={currentUser} />
         </Route>
 
-        <Route path='/leaderboard'>
+        {/* <Route path='/leaderboard'>
           <Leaderboard currentUser={currentUser} />
-        </Route>
+        </Route> */}
 
         <Route path='/accountdetails'>
           <EditAccount currentUser={currentUser} />
