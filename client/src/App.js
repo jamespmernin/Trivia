@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
 
 import './App.css';
-import MainContainer from './containers/MainContainer';
 import Layout from './layouts/Layout';
+import Landing from './screens/Landing/Landing';
 import Login from './screens/Login/Login';
 import Signup from './screens/Signup/Signup';
+import Home from './screens/Home/Home';
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth';
 
 function App() {
@@ -59,9 +60,17 @@ function App() {
           <Signup handleRegister={handleRegister} />
         </Route>
 
-        <Route path='/'>
+        <Route path="/">
           {/* container */}
-          <MainContainer currentUser={currentUser} />
+          {currentUser ? (
+            <>
+              <Home currentUser={currentUser} />
+            </>
+          ) : (
+              <>
+                <Landing />
+              </>
+            )}
         </Route>
 
       </Switch>
