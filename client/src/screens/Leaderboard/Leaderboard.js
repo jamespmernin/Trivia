@@ -6,7 +6,7 @@ const Leaderboard = () => {
   return (
     <div>
       {/* Needs to display all the high scores from the SQL table, this is post MVP */}
-      <Link to="/home">Home</Link>
+      <Link to='/home'><button>Home</button></Link>
     </div>
   );
 }

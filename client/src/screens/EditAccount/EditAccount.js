@@ -7,6 +7,7 @@ const EditAccount = () => {
     <div>
       <h1>Edit Account</h1>
       {/* Put user account preferences here to change username, change password, delete account entirely, this needs to be full CRUD */}
+      <Link to='/home'><button>Home</button></Link>
     </div>
   );
 }

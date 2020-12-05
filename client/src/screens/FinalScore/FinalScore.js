@@ -7,7 +7,7 @@ const Leaderboard = () => {
     <div>
       <h1>Final Score</h1>
       {/* Link to go home and notice of high score achieved if it was achieved */}
-      <Link to="/home">Home</Link>
+      <Link to='/home'><button>Home</button></Link>
     </div>
   );
 }
