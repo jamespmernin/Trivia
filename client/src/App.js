@@ -3,6 +3,7 @@ import { Switch, Route, useHistory } from 'react-router-dom';
 
 import './App.css';
 import MainContainer from './containers/MainContainer';
+import Layout from './layouts/Layout';
 import Login from './screens/Login/Login';
 import Signup from './screens/Signup/Signup';
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth';
@@ -20,7 +21,7 @@ function App() {
       }
     }
     handleVerify();
-  }, [])
+  })
 
   const handleLogin = async (loginData) => {
     const userData = await loginUser(loginData);
@@ -42,23 +43,29 @@ function App() {
   }
 
   return (
-    <div>
+    <Layout
+      currentUser={currentUser}
+      handleLogout={handleLogout}
+    >
       <Switch>
 
         <Route path='/login'>
-          <Login />
+          {/* login */}
+          <Login handleLogin={handleLogin} />
         </Route>
 
         <Route path='/signup'>
-          <Signup />
+          {/* register */}
+          <Signup handleRegister={handleRegister} />
         </Route>
 
         <Route path='/'>
+          {/* container */}
           <MainContainer currentUser={currentUser} />
         </Route>
 
       </Switch>
-    </div>
+    </Layout>
   );
 }
 

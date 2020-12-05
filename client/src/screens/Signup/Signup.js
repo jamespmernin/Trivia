@@ -1,63 +1,44 @@
-import React from 'react';
-import { NavLink, Route } from "react-router-dom";
-import Home from '../Home/Home';
-import './Signup.css';
+import { useState } from 'react';
 
-const Signup = () => {
-  /* User name and password both need to be confirmed to match before adding a user account */
+export default function Register(props) {
+  const [formData, setFormData] = useState({
+    username: "",
+    password: ""
+  })
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }))
+  }
+
   return (
-    <div>
-      <Route exact path="/signup">
-        <div id="signup-main-container">
-          <div id="signup-header-container">
-            <h1 id="signup-header">Sign Up!</h1>
-          </div>
-          <div id="credentials-box">
-            <div id="signup-username-box">
-              <label htmlFor="username">Username:</label>
-              <input
-                type="username"
-                id="signup-username"
-                placeholder="Username"
-                required
-                autoFocus
-              />
-            </div>
-            <div id="signup-username-confirm-box">
-              <label htmlFor="username-confirm">Confirm Username:</label>
-              <input
-                type="username-confirm"
-                id="signup-username-confirm"
-                placeholder="Confirm Username"
-                required
-              />
-            </div>
-            <div id="signup-password-box">
-              <label htmlFor="password">Password:</label>
-              <input
-                id="password"
-                type="password"
-                placeholder="Password"
-                required
-              />
-            </div>
-            <div id="signup-password-confirm-box">
-              <label htmlFor="password-confirm">Confirm Password:</label>
-              <input
-                id="password-confirm"
-                type="password-confirm"
-                placeholder="Confirm Password"
-                required
-              />
-            </div>
-          </div>
-        </div>
-      </Route>
-      <Route path='/home'>
-        <Home />
-      </Route>
-    </div>
-  );
+    <form onSubmit={(e) => {
+      e.preventDefault();
+      props.handleRegister(formData);
+    }}>
+      <h3>Register</h3>
+      <label>Username:
+        <input
+          type='text'
+          name='username'
+          value={formData.username}
+          onChange={handleChange}
+        />
+      </label>
+      <br />
+      <label>Password:
+        <input
+          type='password'
+          name='password'
+          value={formData.password}
+          onChange={handleChange}
+        />
+      </label>
+      <br />
+      <button>Submit</button>
+    </form>
+  )
 }
-
-export default Signup;
