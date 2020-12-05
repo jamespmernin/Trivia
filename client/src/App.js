@@ -10,7 +10,7 @@ import { loginUser, registerUser, removeToken, verifyUser } from './services/aut
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
   const history = useHistory()
-  W
+
   useEffect(() => {
     const handleVerify = async () => {
       const userData = await verifyUser();
