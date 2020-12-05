@@ -60,17 +60,12 @@ function App() {
           <Signup handleRegister={handleRegister} />
         </Route>
 
-        <Route path="/">
-          {/* container */}
-          {currentUser ? (
-            <>
-              <Home currentUser={currentUser} />
-            </>
-          ) : (
-              <>
-                <Landing />
-              </>
-            )}
+        <Route path='/home'>
+          <Home currentUser={currentUser} />
+        </Route>
+
+        <Route path='/'>
+          <Landing />
         </Route>
 
       </Switch>
