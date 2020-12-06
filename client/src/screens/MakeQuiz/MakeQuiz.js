@@ -16,7 +16,7 @@ const MakeQuiz = () => {
       </label>
       <h2>For each question (ten total), come up with a question, four answers, and choose which answer is correct.</h2>
       <div id='quizquestion1'>
-        <label>Question 1:</label>
+        <label>Question 01:</label>
         <input
           type='text'
           name='question1'
@@ -43,7 +43,7 @@ const MakeQuiz = () => {
         />
       </div>
       <div id='quizquestion2'>
-        <label>Question 2:</label>
+        <label>Question 02:</label>
         <input
           type='text'
           name='question2'
@@ -70,7 +70,7 @@ const MakeQuiz = () => {
         />
       </div>
       <div id='quizquestion3'>
-        <label>Question 3:</label>
+        <label>Question 03:</label>
         <input
           type='text'
           name='question3'
@@ -97,7 +97,7 @@ const MakeQuiz = () => {
         />
       </div>
       <div id='quizquestion4'>
-        <label>Question 4:</label>
+        <label>Question 04:</label>
         <input
           type='text'
           name='question4'
@@ -124,7 +124,7 @@ const MakeQuiz = () => {
         />
       </div>
       <div id='quizquestion5'>
-        <label>Question 5:</label>
+        <label>Question 05:</label>
         <input
           type='text'
           name='question5'
@@ -151,7 +151,7 @@ const MakeQuiz = () => {
         />
       </div>
       <div id='quizquestion6'>
-        <label>Question 6:</label>
+        <label>Question 06:</label>
         <input
           type='text'
           name='question6'
@@ -178,7 +178,7 @@ const MakeQuiz = () => {
         />
       </div>
       <div id='quizquestion7'>
-        <label>Question 7:</label>
+        <label>Question 07:</label>
         <input
           type='text'
           name='question7'
@@ -205,7 +205,7 @@ const MakeQuiz = () => {
         />
       </div>
       <div id='quizquestion8'>
-        <label>Question 8:</label>
+        <label>Question 08:</label>
         <input
           type='text'
           name='question8'
@@ -232,7 +232,7 @@ const MakeQuiz = () => {
         />
       </div>
       <div id='quizquestion9'>
-        <label>Question 9:</label>
+        <label>Question 09:</label>
         <input
           type='text'
           name='question9'
