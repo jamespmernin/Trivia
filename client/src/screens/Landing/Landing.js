@@ -1,14 +1,15 @@
 import React from 'react';
-import { NavLink as Link } from "react-router-dom";
-import Signup from '../Signup/Signup';
+import { Link } from "react-router-dom";
 import './Landing.css';
 
 const Landing = () => {
   return (
     <div>
-      <h1 id="landing-header">Welcome to Trivia!</h1>
-      <Link to="/signup">Sign Up</Link>
-      <Link to="/login">Log In</Link>
+      <h2>Get ready to stump your friends...or be stumped!</h2>
+      <div id="register">
+        <Link to="/login"><button>Log In</button></Link>
+        <Link to="/signup"><button>Sign Up</button></Link>
+      </div>
     </div>
   );
 }

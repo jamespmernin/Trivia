@@ -1,15 +1,27 @@
-import React, { useState } from 'react';
-import { Link, useHistory } from "react-router-dom";
-import { createQuiz } from "../../services/quizzes.js";
-import './MakeQuiz.css';
+import React, { useState, useEffect } from 'react';
+import { Link, useHistory, useParams } from "react-router-dom";
+import { updateQuiz, getQuiz } from "../../services/quizzes.js";
+import './EditQuiz.css';
 
-const MakeQuiz = () => {
+const EditQuiz = () => {
   const [formData, setFormData] = useState({
     name: '',
     difficulty: ''
   })
 
   const history = useHistory();
+  const { id } = useParams();
+
+  useEffect(() => {
+    const preFill = async () => {
+      const quizData = await getQuiz(id);
+      setFormData({
+        name: quizData.name,
+        difficulty: quizData.difficulty
+      })
+    }
+    preFill();
+  }, [])
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -21,8 +33,8 @@ const MakeQuiz = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const quiz = await createQuiz(formData);
-    history.push(`/makequiz/${quiz.id}`)
+    const quiz = await updateQuiz(id, formData);
+    history.push('/myprofile')
   }
 
   return (
@@ -46,12 +58,10 @@ const MakeQuiz = () => {
             onChange={handleChange}
           />
         </label>
-        <button>Next</button>
+        <button>Save Changes</button>
       </form>
-      <button>Submit Quiz</button>
-      <Link to='/home'><button>Home</button></Link>
-    </div >
+    </div>
   );
 }
 
-export default MakeQuiz;
+export default EditQuiz;

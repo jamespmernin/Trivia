@@ -1,1 +1,14 @@
 /* Score and number of questions correct should be color coded based on how well the user did */
+/* header */
+h1 {
+  text-align: center;
+}
+
+button {
+  background-color: #9400D3;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+}

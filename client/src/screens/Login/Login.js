@@ -1,46 +1,48 @@
-import React from 'react';
-import { NavLink } from "react-router-dom";
-import Home from '../Home/Home';
-import './Login.css';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './Login.css'
 
-const Login = () => {
-  /* User name and password both need to be validated to match the user database */
+export default function Login(props) {
+  const [formData, setFormData] = useState({
+    username: "",
+    password: ""
+  })
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }))
+  }
+
   return (
-    <div>
-      <div id="login-main-container">
-        <div id="login-header-container">
-          <NavLink id="arrow-link" to="/">
-            <img id="arrow" src="/assets/arrow-go-back.png" alt="backpointing arrow" />
-          </NavLink>
-          <h1 id="login-header">Log In!</h1>
-        </div>
-        <div id="credentials-box">
-          <div id="login-username-box">
-            <label htmlFor="username">Username:</label>
-            <input
-              type="username"
-              id="login-username"
-              placeholder="Username"
-              required
-              autoFocus
-            />
-          </div>
-          <div id="login-password-box">
-            <label htmlFor="password">Password:</label>
-            <input
-              id="password"
-              type="password"
-              placeholder="Password"
-              required
-            />
-          </div>
-        </div>
-      </div>
-      <Route path='/home'>
-        <Home />
-      </Route>
-    </div>
-  );
+    <form onSubmit={(e) => {
+      e.preventDefault();
+      props.handleLogin(formData);
+    }}>
+      <h1>Login</h1>
+      <label>Username:
+        <input
+          type='text'
+          name='username'
+          value={formData.username}
+          onChange={handleChange}
+        />
+      </label>
+      <br />
+      <label>Password:
+        <input
+          type='password'
+          name='password'
+          value={formData.password}
+          onChange={handleChange}
+        />
+      </label>
+      <br />
+      {/* <Link to='/home'><button>Submit</button></Link> */}
+      <button>Submit</button>
+      <Link to='/signup'><button>Sign Up</button></Link>
+    </form>
+  )
 }
-
-export default Login;

@@ -1,2 +1,14 @@
 /* The full leaderboard is going to need to have a scrollbar and possibly a "load more" feature so that only part of the leaderboard is shown at a time, not totally sure how yet to implement that
 there will also be a need for a button to return home */
+h1 {
+  text-align: center;
+}
+
+button {
+  background-color: #9400D3;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+}

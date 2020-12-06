@@ -1,1 +1,13 @@
 /* Center all elements, show top five leaderboard scores as long as there are at least five in the database */
+h1 {
+  text-align: center;
+}
+
+button {
+  background-color: #9400D3;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+}

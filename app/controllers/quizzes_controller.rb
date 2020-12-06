@@ -14,6 +14,11 @@ class QuizzesController < ApplicationController
     render json: @quiz, include: { questions: {include: :answers} }
   end
 
+  # GET user quizzes
+  def get_my_quizzes
+    render json: @current_user.quizzes
+  end
+
   # POST /quizzes
   def create
     @quiz = Quiz.new(quiz_params)
