@@ -7,7 +7,6 @@ const MakeQuiz = () => {
     <div>
       <h1>Make Quiz</h1>
       <h2>Make a title for your quiz here.</h2>
-      {/* Allow a text form here to fill out a title (required) */}
       <label>Title:
         <input
           type='text'
