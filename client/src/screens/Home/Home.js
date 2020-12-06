@@ -11,7 +11,7 @@ const Home = () => {
       {/* <Link to="/leaderboard">Leaderboard</Link> */}
       <Link to="/makequiz"><button>Make a Quiz</button></Link>
       <Link to="/takequiz"><button>Take a Quiz</button></Link>
-      <Link to="/accountdetails"><button>Edit Account</button></Link>
+      <Link to="/accountdetails"><button>View Profile</button></Link>
       <Link to="/" exact><button>Log Out</button></Link>
     </div>
   );
