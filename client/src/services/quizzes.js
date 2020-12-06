@@ -27,7 +27,7 @@ export const createQuiz = async quiz => {
   }
 }
 
-export const updateQuiz = async (id, product) => {
+export const updateQuiz = async (id, quiz) => {
   try {
     const response = await api.put(`/quizzes/${id}`, quiz)
     return response.data
