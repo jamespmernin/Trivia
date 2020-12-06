@@ -124,7 +124,7 @@ const MakeQuiz = () => {
         />
       </div>
       <div id='quizquestion5'>
-        <label>Question 1:</label>
+        <label>Question 5:</label>
         <input
           type='text'
           name='question5'
@@ -205,7 +205,7 @@ const MakeQuiz = () => {
         />
       </div>
       <div id='quizquestion8'>
-        <label>Question 1:</label>
+        <label>Question 8:</label>
         <input
           type='text'
           name='question8'
@@ -259,7 +259,7 @@ const MakeQuiz = () => {
         />
       </div>
       <div id='quizquestion10'>
-        <label>Question 1:</label>
+        <label>Question 10:</label>
         <input
           type='text'
           name='question10'
