@@ -24,7 +24,7 @@ export const createAnswer = async (question_id, answer) => {
     return response.data
   } catch (error) {
     throw error
-  } s
+  }
 }
 
 export const updateAnswer = async (question_id, answer, answer_id) => {
