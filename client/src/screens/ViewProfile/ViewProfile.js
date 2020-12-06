@@ -30,7 +30,7 @@ const ViewProfile = (props) => {
       {myQuizzes.map((quiz) => (
         <div>
           <h4>Name: {quiz.name} Difficulty: {quiz.difficulty}</h4>
-          <button>Edit</button>
+          <Link to={`/editquiz/${quiz.id}`}><button>Edit Details</button></Link>
           <button onClick={() => handleDelete(quiz.id)}>Delete</button>
         </div>
       ))}
