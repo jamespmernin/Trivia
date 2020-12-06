@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import { getUserQuizzes } from "../../services/quizzes";
+import { deleteQuiz, getUserQuizzes } from "../../services/quizzes";
 import './ViewProfile.css';
 
 const ViewProfile = (props) => {
@@ -16,6 +16,11 @@ const ViewProfile = (props) => {
     }
   }, [props.currentUser])
 
+  const handleDelete = async id => {
+    await deleteQuiz(id);
+    setMyQuizzes(prevState => prevState.filter(quiz => quiz.id !== id))
+  }
+
   return (
     <div>
       <h1>My Profile</h1>
@@ -25,6 +30,8 @@ const ViewProfile = (props) => {
       {myQuizzes.map((quiz) => (
         <div>
           <h4>Name: {quiz.name} Difficulty: {quiz.difficulty}</h4>
+          <button>Edit</button>
+          <button onClick={() => handleDelete(quiz.id)}>Delete</button>
         </div>
       ))}
       <Link to='/home'><button>Home</button></Link>

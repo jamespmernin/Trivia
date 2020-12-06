@@ -4,7 +4,7 @@ import { createAnswer } from "../../services/answers.js";
 import './MakeAnswer.css';
 
 const MakeAnswer = () => {
-  const { id } = useParams();
+  const { id, quiz_id } = useParams();
 
   const [formData, setFormData] = useState([
     { answer: '', isCorrect: false },
@@ -33,17 +33,19 @@ const MakeAnswer = () => {
     }))
   }
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    const answer = await createAnswer(id, { answer_data: formData });
-    // history.push(`/makequiz/${quiz.id}`)
+  const handleSubmit = async () => {
+    await createAnswer(id, { answer_data: formData });
   }
 
   return (
     <div>
       <h1>Answer</h1>
       <h2>Make your answers here.</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={(event) => {
+        event.preventDefault();
+        handleSubmit();
+        history.push(`/makequiz/${quiz_id}`)
+      }}>
         {formData.map((answer, index) => (
           <div key={index}>
             <label>Answer {index + 1}
@@ -57,7 +59,12 @@ const MakeAnswer = () => {
             <label><input type='radio' data-index={index} checked={answer.isCorrect} onChange={handleRadioChange} />Correct</label>
           </div>
         ))}
-        <button>Next</button>
+        <button>Next Question</button>
+        <button onClick={(event) => {
+          event.preventDefault();
+          handleSubmit();
+          history.push('/myprofile')
+        }}>Submit Quiz</button>
       </form>
     </div>
   )

@@ -24,7 +24,7 @@ const MakeQuestion = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const question = await createQuestion(formData);
-    history.push(`/makequestion/${question.id}`)
+    history.push(`/makequiz/${id}/makequestion/${question.id}`)
   }
 
   return (
