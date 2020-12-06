@@ -8,6 +8,7 @@ import Login from './screens/Login/Login';
 import Signup from './screens/Signup/Signup';
 import Home from './screens/Home/Home';
 import MakeQuiz from './screens/MakeQuiz/MakeQuiz';
+import MakeQuestion from './screens/MakeQuestion/MakeQuestion'
 import TakeQuiz from './screens/TakeQuiz/TakeQuiz';
 import FinalScore from './screens/FinalScore/FinalScore';
 import EditAccount from './screens/EditAccount/EditAccount';

@@ -20,7 +20,7 @@ export const getQuestion = async id => {
 
 export const createQuestion = async question => {
   try {
-    const response = await api.post('/questions', question)
+    const response = await api.post('/questions', { question: question })
     return response.data
   } catch (error) {
     throw error
@@ -29,7 +29,7 @@ export const createQuestion = async question => {
 
 export const updateQuestion = async (id, question) => {
   try {
-    const response = await api.put(`/questions/${id}`, question)
+    const response = await api.put(`/questions/${id}`, { question: question })
     return response.data
   } catch (error) {
     throw error

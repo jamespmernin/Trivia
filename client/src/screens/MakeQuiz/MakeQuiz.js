@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { createQuiz } from "../../services/quizzes.js";
 import './MakeQuiz.css';
 
@@ -8,6 +8,8 @@ const MakeQuiz = () => {
     name: '',
     difficulty: ''
   })
+
+  const history = useHistory();
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -19,7 +21,8 @@ const MakeQuiz = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    await createQuiz(formData);
+    const quiz = await createQuiz(formData);
+    history.push(`/makequiz/${quiz.id}`)
   }
 
   return (

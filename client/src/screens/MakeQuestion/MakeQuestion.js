@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
-import { createQuiz } from "../../services/quizzes.js"; //?
+import { Link, useHistory, useParams } from "react-router-dom";
+import { createQuestion } from "../../services/questions.js";
 import './MakeQuestion.css';
 
 const MakeQuestion = () => {
+  const { id } = useParams();
+
   const [formData, setFormData] = useState({
-    question: ''
+    question: '',
+    quiz_id: id
   })
 
   const handleChange = (event) => {
@@ -18,7 +21,7 @@ const MakeQuestion = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    await createQuiz(formData); //?
+    await createQuestion(formData);
   }
 
   return (

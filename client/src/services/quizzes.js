@@ -20,7 +20,7 @@ export const getQuiz = async id => {
 
 export const createQuiz = async quiz => {
   try {
-    const response = await api.post('/quizzes', quiz)
+    const response = await api.post('/quizzes', { quiz: quiz })
     return response.data
   } catch (error) {
     throw error
@@ -29,7 +29,7 @@ export const createQuiz = async quiz => {
 
 export const updateQuiz = async (id, quiz) => {
   try {
-    const response = await api.put(`/quizzes/${id}`, quiz)
+    const response = await api.put(`/quizzes/${id}`, { quiz: quiz })
     return response.data
   } catch (error) {
     throw error
