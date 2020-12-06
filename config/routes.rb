@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
+  get '/get_user_quizzes', to: 'quizzes#get_my_quizzes'
   resources :questions do
     resources :answers
   end
