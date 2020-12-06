@@ -8,7 +8,8 @@ import Login from './screens/Login/Login';
 import Signup from './screens/Signup/Signup';
 import Home from './screens/Home/Home';
 import MakeQuiz from './screens/MakeQuiz/MakeQuiz';
-import MakeQuestion from './screens/MakeQuestion/MakeQuestion'
+import MakeQuestion from './screens/MakeQuestion/MakeQuestion';
+import MakeAnswer from './screens/MakeAnswer/MakeAnswer';
 import TakeQuiz from './screens/TakeQuiz/TakeQuiz';
 import FinalScore from './screens/FinalScore/FinalScore';
 import EditAccount from './screens/EditAccount/EditAccount';
@@ -68,6 +69,10 @@ function App() {
 
         <Route path='/home'>
           <Home currentUser={currentUser} />
+        </Route>
+
+        <Route path='makequestion/:id'>
+          <MakeAnswer currentUser={currentUser} />
         </Route>
 
         <Route path='/makequiz/:id'>
