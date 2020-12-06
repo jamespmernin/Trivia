@@ -69,6 +69,10 @@ function App() {
           <Home currentUser={currentUser} />
         </Route>
 
+        <Route path='/makequiz/:id'>
+          <MakeQuestion currentUser={currentUser} />
+        </Route>
+
         <Route path='/makequiz'>
           <MakeQuiz currentUser={currentUser} />
         </Route>

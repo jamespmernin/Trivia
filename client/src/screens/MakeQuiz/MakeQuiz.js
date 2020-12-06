@@ -1,19 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import { createQuiz } from "../../services/quizzes.js";
 import './MakeQuiz.css';
 
 const MakeQuiz = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    difficulty: ''
+  })
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }))
+  }
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    await createQuiz(formData);
+  }
+
   return (
     <div>
       <h1>Make Quiz</h1>
       <h2>Make a title for your quiz here.</h2>
-      <label>Title:
+      <form onSubmit={handleSubmit}>
+        <label>Title:
         <input
-          type='text'
-          name='title'
-        />
-      </label>
-      <h2>For each question (ten total), come up with a question, four answers, and choose which answer is correct.</h2>
+            type='text'
+            name='name'
+            value={formData.name}
+            onChange={handleChange}
+          />
+        </label>
+        <label>Difficulty:
+        <input
+            type='text'
+            name='difficulty'
+            value={formData.difficulty}
+            onChange={handleChange}
+          />
+        </label>
+        <button>Next</button>
+      </form>
+      {/* <h2>For each question (ten total), come up with a question, four answers, and choose which answer is correct.</h2>
       <div id='quizquestion1'>
         <label>Question 01:</label>
         <input
@@ -282,13 +314,13 @@ const MakeQuiz = () => {
         <input
           type='text'
           name='answer10d'
-        />
-      </div>
+        /> */}
+      {/* </div> */}
       {/* Form for question, forms for answers, radio button for correct answer, do this ten times */}
       {/* Button to save, button to discard, button to submit */}
       <button>Submit Quiz</button>
       <Link to='/home'><button>Home</button></Link>
-    </div>
+    </div >
   );
 }
 
