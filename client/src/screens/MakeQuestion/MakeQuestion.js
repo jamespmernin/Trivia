@@ -11,6 +11,8 @@ const MakeQuestion = () => {
     quiz_id: id
   })
 
+  const history = useHistory();
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData(prevState => ({
@@ -21,7 +23,8 @@ const MakeQuestion = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    await createQuestion(formData);
+    const question = await createQuestion(formData);
+    history.push(`/makequestion/${question.id}`)
   }
 
   return (

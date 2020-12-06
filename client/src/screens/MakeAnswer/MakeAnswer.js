@@ -4,7 +4,6 @@ import { createAnswer } from "../../services/answers.js";
 import './MakeAnswer.css';
 
 const MakeAnswer = () => {
-  const
   const { id } = useParams();
 
   const [formData, setFormData] = useState({
@@ -18,6 +17,8 @@ const MakeAnswer = () => {
     answerD_isCorrect: false
   })
 
+  const history = useHistory();
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData(prevState => ({
@@ -28,7 +29,7 @@ const MakeAnswer = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    await createQuestion(formData);
+    await createAnswer(formData);
   }
 
   return (
@@ -69,9 +70,12 @@ const MakeAnswer = () => {
           />
         </label>
         <label>Please pick one answer to be correct:
-          <input
-
-          />
+          <select>
+            <option>Answer A</option>
+            <option>Answer B</option>
+            <option>Answer C</option>
+            <option>Answer D</option>
+          </select>
         </label>
         <button>Next</button>
       </form>
