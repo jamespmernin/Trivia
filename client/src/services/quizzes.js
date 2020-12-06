@@ -18,6 +18,15 @@ export const getQuiz = async id => {
   }
 }
 
+export const getUserQuizzes = async () => {
+  try {
+    const response = await api.get(`/get_user_quizzes`)
+    return response.data
+  } catch (error) {
+    throw error
+  }
+}
+
 export const createQuiz = async quiz => {
   try {
     const response = await api.post('/quizzes', { quiz: quiz })

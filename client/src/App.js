@@ -13,6 +13,7 @@ import MakeAnswer from './screens/MakeAnswer/MakeAnswer';
 import TakeQuiz from './screens/TakeQuiz/TakeQuiz';
 import FinalScore from './screens/FinalScore/FinalScore';
 import EditAccount from './screens/EditAccount/EditAccount';
+import ViewProfile from './screens/ViewProfile/ViewProfile';
 // import Leaderboard from './screens/Leaderboard/Leaderboard';
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth';
 
@@ -97,6 +98,10 @@ function App() {
 
         <Route path='/accountdetails'>
           <EditAccount currentUser={currentUser} />
+        </Route>
+
+        <Route path='/myprofile'>
+          <ViewProfile currentUser={currentUser} />
         </Route>
 
         <Route path='/'>
