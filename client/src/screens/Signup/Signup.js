@@ -20,7 +20,7 @@ export default function Register(props) {
       e.preventDefault();
       props.handleRegister(formData);
     }}>
-      <h3>Sign Up</h3>
+      <h1>Sign Up</h1>
       <label>Username:
         <input
           type='text'
