@@ -24,7 +24,7 @@
 
 _**Trivia** is a project that allows users to both MAKE and TAKE quizzes, while keeping track of scores in a leaderboard. You have to log in to make or take quizzes, and those logins will be stored in a table that is linked to quizzes created and leaderboard scores._
 
-[Live Website](https://mernin-neato-calculator.netlify.app/)
+[Live Website](https://5fce2db8c8d7e3d585d7158a--friendly-wilson-c8822b.netlify.app/)
 
 <br>
 
