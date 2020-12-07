@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useHistory, useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import { updateQuiz, getQuiz } from "../../services/quizzes.js";
 import './EditQuiz.css';
 
@@ -21,7 +21,7 @@ const EditQuiz = () => {
       })
     }
     preFill();
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -33,7 +33,7 @@ const EditQuiz = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const quiz = await updateQuiz(id, formData);
+    await updateQuiz(id, formData);
     history.push('/myprofile')
   }
 
