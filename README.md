@@ -160,17 +160,17 @@ src
 
 | Task                | Priority | Estimated Time | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: |
-| Create User Database    |    H     |     3 hrs      |     TBD     |
-| Create Sign Up/Log In Pages |    H     |     4 hrs      |     TBD     |
-| Create Landing Page |    H     |     4 hrs      |     TBD     |
-| Create Leaderboard Table |    H     |     5 hrs      |     TBD     |
-| Implement Top Five Leaderboard Scores on Home Page |    M     |     4 hrs      |     TBD     |
-| Create a way for users to make their own quizzes |    H     |     8 hrs      |     TBD     |
-| Make a game that uses ten questions |    H     |     6 hrs      |     TBD     |
-| Implement scoring system |    M     |     3 hrs      |    TBD    |
-| Allow CRUD for leaderboards, user quizzes, and user accounts |    H     |     8 hrs      |    TBD    |
-| Post-MVP: Allow users to select category of questions |    L     |     5 hrs      |    TBD    |
-| TOTAL               |    H     |     50 hrs      |     TBD     |
+| Create User Database    |    H     |     3 hrs      |     3hrs     |
+| Create Sign Up/Log In Pages |    H     |     4 hrs      |     4hrs     |
+| Create Landing Page |    H     |     4 hrs      |     4hrs     |
+| Create Leaderboard Table |    H     |     5 hrs      |     0hrs     |
+| Implement Top Five Leaderboard Scores on Home Page |    M     |     4 hrs      |     0hrs     |
+| Create a way for users to make their own quizzes |    H     |     8 hrs      |     8hrs     |
+| Make a game that uses ten questions |    H     |     6 hrs      |     6hrs     |
+| Implement scoring system |    M     |     3 hrs      |    0hrs    |
+| Allow CRUD for leaderboards, user quizzes, and user accounts |    H     |     8 hrs      |    8hrs    |
+| Post-MVP: Allow users to select category of questions |    L     |     5 hrs      |    0hrs    |
+| TOTAL               |    H     |     50hrs      |     33hrs     |
 
 <br>
 
@@ -196,10 +196,26 @@ src
 
 ## Code Showcase
 
-To be included at a later point.
+The coolest part of the code was the complicated implementation of the answers.
+
+```
+{formData.map((answer, index) => (
+  <div key={index}>
+    <label>Answer {index + 1}
+    <input
+      type='text'
+      data-index={index}
+      value={answer.answer}
+      onChange={handleChange}
+    />
+    </label>
+    <label><input type='radio' data-index={index} checked={answer.isCorrect} onChange={handleRadioChange} />Correct</label>
+  </div>
+))}
+```
 
 <br>
 
 ## Code Issues & Resolutions
 
-To be included at a later point.
+My project is very ambitious, so there are still some features that remain to be added, like taking the quiz and making a leaderboard.
