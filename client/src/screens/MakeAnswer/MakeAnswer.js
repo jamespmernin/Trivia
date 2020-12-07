@@ -47,9 +47,9 @@ const MakeAnswer = () => {
         history.push(`/makequiz/${quiz_id}`)
       }}>
         {formData.map((answer, index) => (
-          <div key={index}>
+          <div class="answers" key={index}>
             <label>Answer {index + 1}
-              <input
+              <input class="answer"
                 type='text'
                 data-index={index}
                 value={answer.answer}
